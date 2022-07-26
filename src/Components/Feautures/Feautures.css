@@ -1,0 +1,50 @@
+.feautures {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: 300px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    row-gap: 5rem;
+    column-gap: 3rem;
+}
+.feautures .item {
+ border: 1px solid #ffffff;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ transition: all .4s;
+}
+.feautures .item:hover {
+ box-shadow: 2px 4px 5px #888888;
+}
+.feautures .item img {
+ width: 70px;
+ background: white;
+ height: 70px;
+}
+.feautures .item h3 {
+ margin-top: 10px;
+ padding: 10px;
+ font-weight: 700;
+ color: white;
+}
+.content {
+ display: flex;
+ width: 100%;
+ height: 300px;
+ align-items: center;
+ justify-content: center;
+ color: white;
+}
+@media screen and (max-width: 700px) {
+ .feautures {
+     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+  padding: 0;
+ }
+    .content {
+        height: 200px;
+    }
+}
